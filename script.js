@@ -6,7 +6,7 @@ const subtotalPricelEl = document.querySelector(".subtotal-price");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
 
-// RENDER PRODUCTS
+// RENDER PRODUCTS //
 
 function renderProducts() {
     products.forEach( (product) => {
