@@ -223,7 +223,7 @@ viewCartBtn.addEventListener("click", function(){
     
 });
 
-var closeBtn = document.getElementsByClassName("closeCart")[0];
+const closeBtn = document.getElementsByClassName("close-cart")[0];
 
 closeBtn.onclick = function() {
   shoppingCart.style.display = "none";
