@@ -1,16 +1,16 @@
 
-const productsE1 = document.querySelector(".product__page");
+const productsEl = document.querySelector(".product__page");
 const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
-const subtota2lEl = document.querySelector(".subtotal2");
+const subtotalPricelEl = document.querySelector(".subtotal-price");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
 
-// Render products
+// RENDER PRODUCTS
 
 function renderProducts() {
     products.forEach( (product) => {
-        productsE1.innerHTML += `
+        productsEl.innerHTML += `
        
         <div class="product__photos">
             <div class="product__large-img">
@@ -92,7 +92,7 @@ function renderSubtotal() {
   });
 
   subtotalEl.innerHTML = `Total (${totalItems} items)`;
-  subtota2lEl.innerHTML = `${totalPrice.toFixed(2)}€`;
+  subtotalPricelEl.innerHTML = `${totalPrice.toFixed(2)}€`;
   totalItemsInCartEl.innerHTML = totalItems;
 }
 
@@ -130,14 +130,14 @@ function renderCartItems() {
 }
 
 
-// remove item from cart
+// REMOVE ITEM FROM CART
 function removeItemFromCart(id) {
   cart = cart.filter((item) => item.id !== id);
 
   updateCart();
 }
 
-// change number of units for an item
+// CHANGE NUMBER OF UNITS FOR AN ITEM
 function changeNumberOfUnits(action, id) {
   cart = cart.map((item) => {
     let numberOfUnits = item.numberOfUnits;
@@ -160,7 +160,7 @@ function changeNumberOfUnits(action, id) {
 }
 
 
-// images section //
+// IMAGES SECTION //
 
 const smallImages = document.getElementsByClassName("thumbnail")
 const activeImages = document.getElementsByClassName("active")
@@ -183,7 +183,7 @@ smallImages[i].addEventListener("click", function(){
 
 
 
-// image modal //
+// IMAGE MODAL //
 var modal = document.getElementById("myModal");
 
 
@@ -209,7 +209,7 @@ window.addEventListener("click", function(e) {
 });
 
 
-// shopping cart modal //
+// SHOPPING CART MODAL //
  
 const viewCartBtn = document.getElementById("cart");
 const shoppingCart = document.getElementById("shopping-cart");
