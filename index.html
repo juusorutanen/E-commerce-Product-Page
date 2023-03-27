@@ -23,6 +23,22 @@
             <li><a href="#contact">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div id="navbar-mobile">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>Collections</li></a>
+              <a href="#"><li>Men</li></a>
+              <a href="#"><li>Women</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Contact</li></a>
+            </ul>
+          </div>
+          <div class="logo-mobile">
+            sneakers
+            </div>
         <div class="nav__right">
             <!-- render cart -->
         <i class="fa regular fa-cart-shopping" id="cart"></i>
@@ -30,14 +46,17 @@
         <img src="./images/juusoprofiilikuva.jpg"  alt = "profile photo" class="image__placeholder"></div>
         </div>
     </nav>
+        
+    
     <section class="product__page">
 <!-- render product -->     
     </section>
     <div class="cart" id="shopping-cart">
         <div class="cart-content">
-            <span class="close-cart">&times;</span>
-            <h1 class="cart-header">Shopping Cart
-            </h1>
+            <div class="cart-header-wrapper">
+                <h1 class="cart-header">Shopping Cart</h1>
+                <span class="close-cart">&times;</span>
+            </div>
             <div class="cart-items">
                 <!-- render cart items -->
             </div>

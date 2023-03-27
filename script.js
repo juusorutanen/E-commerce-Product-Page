@@ -221,6 +221,7 @@ viewCartBtn.addEventListener("click", function(){
     shoppingCart.style.display = "block";
     
     
+    
 });
 
 const closeBtn = document.getElementsByClassName("close-cart")[0];
